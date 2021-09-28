@@ -1,96 +1,54 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
-        <h2 class="headline font-weight-bold mb-3">
-          Est-ce que çà fonctionne ou pas ?
-        </h2>
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
+    <v-container>
+        <v-row dense>
+            
+          <v-col
+            v-for="(item, i) in items"
             :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
+            cols="12"
+            >
+                <v-card
+                    :color="item.color"
+                    dark
+                >
+                    <div class="d-flex flex-no-wrap justify-space-between">
+
+                    <div>
+                        <v-card-title
+                        class="text-h5"
+                        v-text="item.title"
+                        ></v-card-title>
+
+                        <v-card-subtitle v-text="item.subtitle"></v-card-subtitle>
+
+                        <v-card-actions>
+                        
+                        <v-btn
+                            class="ml-2 mt-5"
+                            outlined
+                            rounded
+                            small
+                            :href=item.link
+                            target="_blank"
+                        >
+                            Allons-y !
+                        </v-btn>
+                        </v-card-actions>
+                    </div>
+
+                    <v-avatar
+                        class="ma-3"
+                        size="125"
+                        tile
+                    >
+                        <v-img :src="item.src"></v-img>
+                    </v-avatar>
+                    </div>
+                </v-card>
+            </v-col>
+
         </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+    </v-container>
 </template>
 
 <script>
@@ -103,56 +61,32 @@
     },
 
     data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
+    items: [
+      {
+        title: 'Assistance publique – Hôpitaux de Paris',
+        subtitle: 'Suite à la fuite de données qui a touché plus de 1,4 millions de comptes en aout 2021, lAP-HP souhaite mettre en place un système de prévention à lintension des personnes qui présenteraient des risques de hameçonnage.',
+        color: '#1F7087',
+        src: 'https://stellasurgical.com/wp-content/uploads/2019/12/logo-APHP-1.png',
+        link: 'https://www.google.fr/',
+        
+      },
+      {
+        title: 'Assistance publique – Hôpitaux de Paris',
+        subtitle: 'Suite à la fuite de données qui a touché plus de 1,4 millions de comptes en aout 2021, lAP-HP souhaite mettre en place un système de prévention à lintension des personnes qui présenteraient des risques de hameçonnage.',
+        color: '#952175',
+        src: 'https://cdn2.clc2l.fr/t/l/e/leboncoin-O_ZizH.png',
+        link: 'https://www.google.fr/',
+        
+      },
+      {
+        title: 'Conseils généraux',
+        subtitle: 'Quelques conseils afin de mieux se préparer et prévenir les menaces dinternet',
+        color: '#385F73',
+        src: 'https://woody.cloudly.space/app/uploads/cdc-villes-soeurs/2020/12/thumbs/logo-cybermalveillance-gouv--fr--640x480.png',
+        link: 'https://www.cybermalveillance.gouv.fr/',
+        
+      },
+    ],
+  })
   }
 </script>
