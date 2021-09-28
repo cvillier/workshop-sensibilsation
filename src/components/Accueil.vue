@@ -52,9 +52,10 @@
 </template>
 
 <script>
+export default {
+  name: "Accueil",
 
-  export default {
-    name: 'Accueil',
+  components: {},
 
     components: {
 
