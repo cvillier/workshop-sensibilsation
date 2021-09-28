@@ -12,11 +12,6 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
-        <v-container>
-          <v-row>
-            <v-col>Commit Jérôme</v-col>
-          </v-row>
-        </v-container>
 
         <p class="subheading font-weight-regular">
           For help and collaboration with other Vuetify developers,
@@ -29,7 +24,9 @@
 
       <v-col class="mb-5" cols="12">
         <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-
+        <h2 class="headline font-weight-bold mb-3">
+          Est-ce que çà fonctionne ou pas ?
+        </h2>
         <v-row justify="center">
           <a
             v-for="(next, i) in whatsNext"
