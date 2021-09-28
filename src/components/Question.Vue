@@ -1,4 +1,4 @@
-<temAplate>
+<template>
     <v-container>
         <v-row class="text-center">
             <v-col cols="1" align-self="center" block>
