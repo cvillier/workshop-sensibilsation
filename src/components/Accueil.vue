@@ -21,37 +21,31 @@
                         v-text="item.title"
                         ></v-card-title>
 
-                        <v-card-subtitle>{{ item.subtitle}}</v-card-subtitle>
-                          
-                        <v-card-actions>
-                        
-                        <v-btn
-                            class="ml-2 mt-5"
-                            outlined
-                            rounded
-                            small
-                            :href=item.link
-                            target="_blank"
-                        >
-                            Allons-y !
-                        </v-btn>
-                        </v-card-actions>
-                    
-                     <v-col align="end">
-                    <v-avatar
-                        class="ma-3"
-                        size="125"
-                        tile
-                    >
-                        <v-img :src="item.src"></v-img>
-                    </v-avatar>
-                    </v-col>
-                    </v-container>
-                </v-card>
-            </v-col>
+            <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
 
-        </v-row>
-    </v-container>
+            <v-card-actions>
+              <v-btn
+                class="ml-2 mt-5"
+                outlined
+                rounded
+                small
+                :href="item.link"
+                target="_blank"
+              >
+                Allons-y !
+              </v-btn>
+            </v-card-actions>
+
+            <v-col align="end">
+              <v-avatar class="ma-3" size="125" tile>
+                <v-img :src="item.src"></v-img>
+              </v-avatar>
+            </v-col>
+          </v-container>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -63,9 +57,7 @@ export default {
     components: {
       
 
-    },
-
-    data: () => ({
+  data: () => ({
     items: [
       {
         title: 'Assistance Publique – Hôpitaux de Paris',
@@ -84,14 +76,14 @@ export default {
         
       },
       {
-        title: 'Conseils généraux',
-        subtitle: 'Quelques conseils afin de mieux se préparer et prévenir les menaces dinternet',
-        color: '#385F73',
-        src: 'https://woody.cloudly.space/app/uploads/cdc-villes-soeurs/2020/12/thumbs/logo-cybermalveillance-gouv--fr--640x480.png',
-        link: 'https://www.cybermalveillance.gouv.fr/',
-        
+        title: "Conseils généraux",
+        subtitle:
+          "Quelques conseils afin de mieux se préparer et prévenir les menaces dinternet",
+        color: "#385F73",
+        src: "https://woody.cloudly.space/app/uploads/cdc-villes-soeurs/2020/12/thumbs/logo-cybermalveillance-gouv--fr--640x480.png",
+        link: "https://www.cybermalveillance.gouv.fr/",
       },
     ],
-  })
-  }
+  }),
+};
 </script>
