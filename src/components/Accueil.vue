@@ -11,16 +11,16 @@
                     :color="item.color"
                     dark
                 >
-                    <div class="d-flex flex-no-wrap justify-space-between">
-
-                    <div>
+                    <v-container>
+                        
+                     
                         <v-card-title
                         class="text-h5"
                         v-text="item.title"
                         ></v-card-title>
 
-                        <v-card-subtitle v-text="item.subtitle"></v-card-subtitle>
-
+                        <v-card-subtitle>{{ item.subtitle}}</v-card-subtitle>
+                          
                         <v-card-actions>
                         
                         <v-btn
@@ -34,8 +34,8 @@
                             Allons-y !
                         </v-btn>
                         </v-card-actions>
-                    </div>
-
+                    
+                     <v-col align="end">
                     <v-avatar
                         class="ma-3"
                         size="125"
@@ -43,7 +43,8 @@
                     >
                         <v-img :src="item.src"></v-img>
                     </v-avatar>
-                    </div>
+                    </v-col>
+                    </v-container>
                 </v-card>
             </v-col>
 
@@ -54,8 +55,6 @@
 <script>
 export default {
   name: "Accueil",
-
-  components: {},
 
     components: {
 
