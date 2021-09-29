@@ -1,9 +1,10 @@
 <template>
-  <accueil></accueil>
+  <Accueil></Accueil>
 </template>
 
 <script>
 import Accueil from "./components/Accueil.vue";
+
 
 export default {
   name: "App",

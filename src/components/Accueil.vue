@@ -1,5 +1,7 @@
 <template>
+
     <v-container>
+     
         <v-row dense>
             
           <v-col
@@ -53,17 +55,20 @@
 </template>
 
 <script>
+
+
 export default {
   name: "Accueil",
 
     components: {
+      
 
     },
 
     data: () => ({
     items: [
       {
-        title: 'Assistance publique – Hôpitaux de Paris',
+        title: 'Assistance Publique – Hôpitaux de Paris',
         subtitle: 'Suite à la fuite de données qui a touché plus de 1,4 millions de comptes en aout 2021, lAP-HP souhaite mettre en place un système de prévention à lintension des personnes qui présenteraient des risques de hameçonnage.',
         color: '#1F7087',
         src: 'https://stellasurgical.com/wp-content/uploads/2019/12/logo-APHP-1.png',
@@ -71,8 +76,8 @@ export default {
         
       },
       {
-        title: 'Assistance publique – Hôpitaux de Paris',
-        subtitle: 'Suite à la fuite de données qui a touché plus de 1,4 millions de comptes en aout 2021, lAP-HP souhaite mettre en place un système de prévention à lintension des personnes qui présenteraient des risques de hameçonnage.',
+        title: 'LeBonCoin',
+        subtitle: "Ces derniers mois, la plateforme LeBonCoin a observée une augmentation du nombre de fausses annonces, dont l'objectif est d'obtenir des informations des utilisateurs à des fins frauduleuses. Entrainons-nous à identifier ces annonces !",
         color: '#952175',
         src: 'https://cdn2.clc2l.fr/t/l/e/leboncoin-O_ZizH.png',
         link: 'https://www.google.fr/',
