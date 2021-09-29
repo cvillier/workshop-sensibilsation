@@ -3,6 +3,7 @@
     <v-row>
       <v-col>{{ maDataTest + "test" }}</v-col>
     </v-row>
+    <question></question>
   </v-container>
 </template>
 
