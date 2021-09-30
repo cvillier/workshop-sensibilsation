@@ -54,10 +54,10 @@
                 class="grey darken-4"
                 ></v-img>
                 <v-card-subtitle class="text-h5"> </v-card-subtitle>
-                <v-card-subtitle class="text-h5">Le nom de l'utilisateur parraît suspect.</v-card-subtitle>
-                <v-card-subtitle class="text-h5">La photo a l'air trop propre.</v-card-subtitle>
-                <v-card-subtitle class="text-h5">L'utilisateur laisse son email : ce qui n'est pas recommandé par LeBonCoin.</v-card-subtitle>
-                <v-card-subtitle class="text-h5">On remarque aussi que l'annonce est de fin septembre.</v-card-subtitle>
+                <v-card-subtitle class="text-h5">Le nom de l'utilisateur parraît suspect : xai ne correspond à rien... en général en pseudo en inspiré du nom et/ou du prénom de l'utilisateur.</v-card-subtitle>
+                <v-card-subtitle class="text-h5">La photo a l'air trop propre : souvent les photos des annonces sont prises avec les téléphones portables, rarement avec des appareils de professionnels.</v-card-subtitle>
+                <v-card-subtitle class="text-h5">L'utilisateur laisse son email : ce qui n'est pas recommandé par LeBonCoin, qui préfère que l'on communique via sa plateforme.</v-card-subtitle>
+                <v-card-subtitle class="text-h5">Retenons que l'annonce est de fin septembre, nous reviendrons sur cet élément plus tard.</v-card-subtitle>
             </v-card>
 
             <v-card>
