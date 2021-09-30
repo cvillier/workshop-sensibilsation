@@ -1,0 +1,10 @@
+<template>
+    <v-container>
+        <v-dialog
+        :value="modaleQuestionIsOpen"
+        fullscreen
+        transition="dialog-bottom-transition"
+        >
+        </v-dialog>
+    </v-container>
+</template>

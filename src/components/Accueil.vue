@@ -47,9 +47,9 @@ export default {
   components: { Question },
 
   data: () => ({
-    modaleQuestionIsOpen: null, // LBC
-    modaleQuestion2IsOpen: null, // Conseils
-    modaleQuestion3IsOpen: null, // APHP
+    modaleQuestionIsOpen: false, // LBC
+    modaleQuestion2IsOpen: false, // Conseils
+    modaleQuestion3IsOpen: false, // APHP
 
     items: [
       {
