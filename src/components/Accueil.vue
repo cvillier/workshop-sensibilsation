@@ -7,7 +7,6 @@
             <v-card-title class="text-h5" v-text="item.title"></v-card-title>
 
             <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
-            {{ item.label }}
             <v-card-actions>
               <v-btn
                 class="ml-2 mt-5"
