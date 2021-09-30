@@ -34,22 +34,26 @@
         :modaleQuestionIsOpen="modaleQuestionIsOpen"
         v-if="modaleQuestionIsOpen"
       ></question>
+      <conseil :modaleQuestion3IsOpen="modaleQuestion3IsOpen"
+        v-if="modaleQuestion3IsOpen"></conseil>
+
     </v-app>
   </v-container>
 </template>
 
 <script>
 import Question from "./Question.vue";
+import Conseil from './Conseil.vue';
 
 export default {
   name: "Accueil",
 
-  components: { Question },
+  components: { Question, Conseil },
 
   data: () => ({
-    modaleQuestionIsOpen: null, // LBC
-    modaleQuestion2IsOpen: null, // Conseils
-    modaleQuestion3IsOpen: null, // APHP
+    modaleQuestionIsOpen: false, // LBC
+    modaleQuestion2IsOpen: false, // Conseils
+    modaleQuestion3IsOpen: false, // APHP
 
     items: [
       {
