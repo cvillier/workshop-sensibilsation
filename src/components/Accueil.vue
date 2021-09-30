@@ -55,6 +55,7 @@ export default {
   name: "Accueil",
 
     components: {
+    },
       
 
   data: () => ({
